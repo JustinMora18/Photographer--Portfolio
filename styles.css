@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html{
+    font-family: "Sora", sans-serif;
+}
+
+.hero{
+    background-image: url(assets/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 3px;
+}
+
+.title-center h1{
+    font-size: 12rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 0.8;
+    transition: 0.3s;
+}
+
+.nav-left{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 10rem;
+}
+
+.nav-left a{
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-left a:hover {
+    opacity: 0.5;
+}
+
+.phrase-right{
+    margin-right: 10rem;
+    font-size: 2rem;
+    line-height: 1;
+}

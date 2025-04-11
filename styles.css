@@ -21,7 +21,9 @@ html{
     justify-content: space-between;
     align-items: center;
     color: white;
-    gap: 3px;
+}
+.title-center{
+    max-width: 500px;
 }
 
 .title-center h1{
@@ -29,23 +31,20 @@ html{
     text-align: center;
     font-weight: 900;
     line-height: 0.8;
-    transition: 0.3s;
 }
 
 .nav-left{
     display: flex;
     flex-direction: column;
-    font-weight: 600;
-    font-size: 1.2rem;
     margin-left: 10rem;
 }
 
 .nav-left a{
+    font-weight: 600;
     font-size: 2rem;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     color: white;
-    transition: 0.3s;
 }
 
 .nav-left a:hover {
@@ -54,6 +53,87 @@ html{
 
 .phrase-right{
     margin-right: 10rem;
-    font-size: 2rem;
+}
+.phrase{
+    text-align: center;
     line-height: 1;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.BR{
+    display: inline;
+}
+
+@media only screen and (max-width: 1190px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .nav-left{
+        flex-direction: row;
+        gap: 40px;
+        order: 3; 
+        padding-bottom: 20rem;
+        margin: 0 2rem;
+    }
+    
+    .nav-left a{
+        font-size: 1.4rem;
+    }
+
+    .title-center{
+        order: 2;
+    }
+
+    .title-center h1{
+        font-size: 8rem;
+
+    }
+
+    .phrase-right{
+        margin: 0 3rem;
+        padding-top: 20rem;
+        order: 1;
+    }
+    
+    .phrase{
+        font-size: 1rem;
+    }
+
+    .BR{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .nav-left{
+        order: 3; 
+    }
+    
+    .nav-left a{
+        font-size: 1rem;
+    }
+
+    .title-center{
+        order: 2;
+    }
+
+    .title-center h1{
+        font-size: 6rem;
+
+    }
+
+    .phrase-right{
+        margin: 0 4rem;
+        order: 1;
+    }
+    
+    .phrase{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .BR{
+        display: none;
+    }
 }

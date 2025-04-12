@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 html{
@@ -24,6 +23,8 @@ html{
 }
 .title-center{
     max-width: 500px;
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .title-center h1{
@@ -37,6 +38,7 @@ html{
     display: flex;
     flex-direction: column;
     margin-left: 10rem;
+    padding-left: 50px;
 }
 
 .nav-left a{
@@ -45,6 +47,8 @@ html{
     text-decoration: none;
     text-align: center;
     color: white;
+    opacity: 0; 
+    transform: translateX(-50px);
 }
 
 .nav-left a:hover {
@@ -53,16 +57,41 @@ html{
 
 .phrase-right{
     margin-right: 10rem;
+    opacity: 0;
+    transform: translateX(50px);
 }
 .phrase{
     text-align: center;
     line-height: 1;
     font-size: 2rem;
     font-weight: 600;
+
 }
 .BR{
     display: inline;
 }
+
+/* ---------- */
+/* section 2 */
+.gallery-one{
+    height: 100vh;
+    width: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gallery-text{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 13rem;
+    position: relative;
+}
+
+
 
 @media only screen and (max-width: 1190px){
     .hero{

@@ -74,13 +74,18 @@ html{
 /* ---------- */
 /* section 2 */
 .gallery-one{
-    height: 100vh;
-    width: auto;
-}
-
-.container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 0.6fr 1fr 1fr;    grid-template-rows: auto;
+    gap: 10px;
+    padding: 2rem;
+}
+.imgs{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    position: absolute;
 }
 
 .gallery-text{
@@ -89,6 +94,8 @@ html{
     text-align: center;
     margin-top: 13rem;
     position: relative;
+    grid-column: span 1;
+
 }
 
 

@@ -57,3 +57,22 @@ animateOnView('.gallery-wrapper-two', () => {
         duration: 3000,
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('.img');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+    });
+
+    imgs.forEach(img => observer.observe(img));
+});

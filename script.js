@@ -61,14 +61,22 @@ animateOnView('.gallery-wrapper-two', () => {
 animateOnView('.galleryOption', () => {
     anime({
         targets: '.galleryOption a',
-        translateX: [ -10, 0 ],
-        opacity: [ 0, 1 ],
-        duration: 1000,
-        delay: anime.stagger(200),
+        translateX: [ -50, 0 ],
+        opacity: [ 0, 2 ],
+        duration: 3000,
+        delay: anime.stagger(100),
     });
 });
 
-
+animateOnView('.fthSect-text', () => {
+    anime({
+        targets: '.fthSect-text',
+        translateY: [50, 0],
+        opacity: [0, 1],
+        duration: 1500,
+        easing: 'easeOutExpo'
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const imgs = document.querySelectorAll('.img');
@@ -86,3 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     imgs.forEach(img => observer.observe(img));
 });
+
+

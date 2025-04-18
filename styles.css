@@ -22,8 +22,8 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f5f5f5;
-    border: 20px solid #f5f5f5;
+    color: #E7E7E7;
+    border: 20px solid #E7E7E7;
     box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@ html{
 .title-center h1:hover{
     transform: scale(1.15) rotate(-1deg);
     text-shadow: 0 0 100px #000000;
-    color: #ffffff;
+    color: #E7E7E7;
 }
 /* ---- section one - nav left ---- */
 
@@ -61,7 +61,7 @@ html{
     font-size: 2rem;
     text-decoration: none;
     text-align: center;
-    color: #f5f5f5;
+    color: #E7E7E7;
     text-shadow: 0 0 50px #000000a6;
     cursor: pointer;
 }
@@ -121,7 +121,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #E7E7E7;
     height: 100vh;
     width: 100vw;
     gap: 0.5rem;
@@ -169,9 +169,6 @@ html{
 
 .gallery-wrapper{
     transform: translateX(-50px);
-}
-
-.gallery-wrapper{
     display: flex;
     position: relative;
     flex-direction: row;
@@ -226,7 +223,7 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 20px solid #f5f5f5;
+    border: 20px solid #E7E7E7;
     box-sizing: border-box;
 }
 
@@ -234,28 +231,29 @@ html{
     position: absolute;
     font-size: 2rem;
     font-weight: 600;
-    color: #f5f5f5;    
+    color: #E7E7E7;    
     margin: 20%;
 }
 
 /* ---- section four  ---- */
 
 .hero-fthSect{
-    border: 20px solid #f5f5f5;
+    border: 20px solid #E7E7E7;
     border-top: none;
     width: 100vw;
-    height: 242vh;
-    background-color: #f5f5f5;
+    height: 270vh;
+    background-color: #E7E7E7;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
+/* ---- fthSect - tittle ---- */
+
 .fthSect-gallery-title{
     position: relative;
-    margin: 10% 0;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -263,15 +261,12 @@ html{
     color: #000000;
     font-size: 14rem;
     font-weight: 900;
-}
-
-.fthSect-gallery-title h4:hover{
-    color: #ff5100;
-    transform: scale(1.05);
-    transition: transform 0.09s ease-in-out;
+    opacity: 0;
+    transition: transform 0.4s ease;
     cursor: pointer;
 }
 
+/* ---- fthSect - wrapper ---- */
 
 .fthSect-gallery-wrapper{
     display: flex;
@@ -288,18 +283,18 @@ html{
     transition: transform 0.20s ease-in-out; 
 }
 
-.fthSect-gallery-wrapper > div {
+.fthSect-gallery-wrapper div{
     position: relative;
     overflow: hidden;
 }
 
-.fthSect-gallery-wrapper > div img {
+.fthSect-gallery-wrapper > div img{
     display: block;
     width: 100%;
     transition: filter 0.3s ease;
 }  
 
-.fthSect-gallery-wrapper > div:hover img {
+.fthSect-gallery-wrapper > div:hover img{
     filter: brightness(30%);
 }
 
@@ -309,7 +304,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    color: #f5f5f5;           
+    color: #E7E7E7;           
     font-size: 2rem;  
     text-align: center;
     transition: opacity 0.3s ease;
@@ -320,14 +315,16 @@ html{
     opacity: 1;
 }
 
+/* ---- fthSect - gallery links ---- */
+
 .fthSect-galleryOptions-wrapper{
     display: flex;
 }
 
+
 .galleryOption{
     margin: 0 4rem 6rem 4rem;
     transition: transform 0.09s ease-in-out;
-
 }
 
 .fthSect-galleryOptions-wrapper a{
@@ -344,7 +341,7 @@ html{
 .fthSect-galleryOptions-wrapper a::after{
     content: '';
     position: absolute;
-    width: 110%;
+    width: 108%;
     height: 4px;
     background-color: #ff5100;
     bottom: 2px;
@@ -361,27 +358,26 @@ html{
 }
 
 .fthSect-galleryOptions-wrapper .galleryOption:hover{
-    transform: scale(1.20) rotate(-2deg);
+    transform: scale(1.20) rotate(2deg);
 }
 
-
 /* -------------------------- */
-@keyframes appear {
-    from {
+@keyframes appear{
+    from{
     opacity: 0;
     transform: scale(0.5);
     }
-    to {
+    to{
     opacity: 1;
     transform: scale(1);
     }
 }
 
-.img {
+.img{
     opacity: 0;
 }
 
-.img.in-view {
+.img.in-view{
     animation: appear 0.5s forwards;
 }
 

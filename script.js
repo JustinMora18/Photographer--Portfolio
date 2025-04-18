@@ -58,6 +58,16 @@ animateOnView('.gallery-wrapper-two', () => {
     });
 });
 
+animateOnView('.galleryOption', () => {
+    anime({
+        targets: '.galleryOption a',
+        translateX: [ -10, 0 ],
+        opacity: [ 0, 1 ],
+        duration: 1000,
+        delay: anime.stagger(200),
+    });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

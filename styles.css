@@ -114,6 +114,82 @@ html{
     display: inline;
 }
 
+/* ---- section two - About  ---- */
+.about-sect-two-wrapper{
+    background-image: url(assets/aboutIMGs/aboutBg1.png) ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #E7E7E7;
+    box-sizing: border-box;
+}
+
+.about-photo-and-text-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect-two-text-wrapper{
+    width: 45vw;
+    height: auto;
+    text-align: justify;
+}
+
+.about-photo-and-text-wrapper p{
+    color: #E7E7E7;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.blurSquare{
+    width: 505px;
+    height: 600px;
+    padding: 0 10px;
+    background-color: #2424242a;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #c2c2c29e;
+    border-left: 1px solid #c2c2c29e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.photo img{
+    transition: transform 0.3s ease;
+    transform-origin: bottom center;
+    margin: 1px 0 0 100px;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+}
+
+.photo img:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+.sec-two-name h5{
+    font-size: 2rem;
+    color: #E7E7E7;
+}
+
+.profession h5{
+    font-size: 1.5rem;
+    color: #e7e7e75a;
+}
+
+.sec-two-name h5:hover{
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+
 /* ---- section two ---- */
 
 .sec-two{
@@ -229,6 +305,7 @@ html{
 
 .trdSect-text{
     position: absolute;
+    text-align: justify;
     font-size: 2rem;
     font-weight: 600;
     color: #E7E7E7;    
@@ -320,7 +397,6 @@ html{
 .fthSect-galleryOptions-wrapper{
     display: flex;
 }
-
 
 .galleryOption{
     margin: 0 4rem 6rem 4rem;
@@ -472,3 +548,8 @@ html{
         display: none;
     }
 }
+
+
+
+/* me quede en que iba a ahcer el blurSquare pero se puso blur todo, averiguar como se hacer eso, ya subi el commit anterior, empezamos a ahcer la seccion del about, toca cambiar el orden en el html, camviar sect-2 por secr 3, y asi sesecivamente, no hacer nada nada mas hasta que termine de hcaer el about section. luego arregalr algun error, y toca hacer la seccion se Get in touch, y luego el fotter, posiblememte hacer un nav bar ue aparezca cuando se haga scroll*/
+    

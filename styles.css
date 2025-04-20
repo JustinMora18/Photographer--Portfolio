@@ -190,9 +190,9 @@ html{
 }
 
 
-/* ---- section two ---- */
+/* ---- section three - gallery ---- */
 
-.sec-two{
+.sec-three-gallery{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,7 +237,7 @@ html{
     transform-origin: bottom left;
 }
 
-/* ---- section two - wrapper ---- */
+/* ---- section three- gallery - wrapper ---- */
 .gallery-text:hover{
     transform: scale(1.20) rotate(-2deg);
 
@@ -289,9 +289,9 @@ html{
     margin: 0 1rem -2rem 1rem; 
 }
 
-/* ---- Section three ---- */
+/* ---- Section four ---- */
 
-.hero-three{
+.hero-fthSect{
     background-image: url(assets/rdSectionIMGS/bgRdSect-01.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -303,7 +303,7 @@ html{
     box-sizing: border-box;
 }
 
-.trdSect-text{
+.fourth-sect-text{
     position: absolute;
     text-align: justify;
     font-size: 2rem;
@@ -312,13 +312,13 @@ html{
     margin: 20%;
 }
 
-/* ---- section four  ---- */
+/* ---- section five  ---- */
 
-.hero-fthSect{
+.hero-fifth-sect{
     border: 20px solid #E7E7E7;
     border-top: none;
     width: 100vw;
-    height: 270vh;
+    height: 265vh;
     background-color: #E7E7E7;
     display: flex;
     flex-direction: column;
@@ -326,15 +326,15 @@ html{
     box-sizing: border-box;
 }
 
-/* ---- fthSect - tittle ---- */
+/* ---- fifth sect - tittle ---- */
 
-.fthSect-gallery-title{
+.fifth-sect-gallery-title{
     position: relative;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-.fthSect-gallery-title h4{
+.fifth-sect-gallery-title h4{
     color: #000000;
     font-size: 14rem;
     font-weight: 900;
@@ -343,9 +343,9 @@ html{
     cursor: pointer;
 }
 
-/* ---- fthSect - wrapper ---- */
+/* ---- fifth sect - wrapper ---- */
 
-.fthSect-gallery-wrapper{
+.fifth-sect-gallery-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -353,29 +353,29 @@ html{
     margin: 0 auto;
 }
 
-.fthSect-gallery-wrapper img{
+.fifth-sect-gallery-wrapper img{
     border-radius: 25px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.20s ease-in-out; 
 }
 
-.fthSect-gallery-wrapper div{
+.fifth-sect-gallery-wrapper div{
     position: relative;
     overflow: hidden;
 }
 
-.fthSect-gallery-wrapper > div img{
+.fifth-sect-gallery-wrapper > div img{
     display: block;
     width: 100%;
     transition: filter 0.3s ease;
 }  
 
-.fthSect-gallery-wrapper > div:hover img{
+.fifth-sect-gallery-wrapper > div:hover img{
     filter: brightness(30%);
 }
 
-.fthSect-gallery-wrapper > div .album-name {
+.fifth-sect-gallery-wrapper > div .album-name {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -388,13 +388,13 @@ html{
     pointer-events: none;  
 }
 
-.fthSect-gallery-wrapper > div:hover .album-name {
+.fifth-sect-gallery-wrapper > div:hover .album-name {
     opacity: 1;
 }
 
-/* ---- fthSect - gallery links ---- */
+/* ---- fifth sect - gallery links ---- */
 
-.fthSect-galleryOptions-wrapper{
+.fifth-sect-galleryOptions-wrapper{
     display: flex;
 }
 
@@ -403,7 +403,7 @@ html{
     transition: transform 0.09s ease-in-out;
 }
 
-.fthSect-galleryOptions-wrapper a{
+.fifth-sect-galleryOptions-wrapper a{
     position: relative;
     font-size: 2rem;
     font-weight: 600;
@@ -414,7 +414,7 @@ html{
     cursor: pointer;
 }
 
-.fthSect-galleryOptions-wrapper a::after{
+.fifth-sect-galleryOptions-wrapper a::after{
     content: '';
     position: absolute;
     width: 108%;
@@ -428,13 +428,130 @@ html{
     transition: transform 0.3s ease-out;
 }
 
-.fthSect-galleryOptions-wrapper a:hover::after{
+.fifth-sect-galleryOptions-wrapper a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.fthSect-galleryOptions-wrapper .galleryOption:hover{
+.fifth-sect-galleryOptions-wrapper .galleryOption:hover{
     transform: scale(1.20) rotate(2deg);
+}
+
+/* ---- Section sixth ---- */
+.contact-sect{
+    background-image: url(assets/sthSection/sth-Sect-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    border: 20px solid #E7E7E7;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.sixth-sect-text-wrapper{
+    position: relative;
+    margin-top: 2rem;
+}
+
+.sixth-sect-text-wrapper h4{
+    color: #E7E7E7;
+    font-size: 10rem;
+    text-align: center;
+    font-weight:900;
+    line-height: 0.8;
+}
+
+.sixth-sect-contact-items-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.text-white{
+    color: #E7E7E7;
+    font-weight: 600;
+}
+
+.subtitle-orange{
+    color: #ff5100;
+    font-weight: 600;
+}
+
+.sixth-sect-form label{
+    font-size: 2rem;
+}
+
+.sixth-sect-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+}
+
+.sixth-sect-form input, .sixth-sect-form textarea{
+    width: 100%;
+    height: 70px;
+    background-color: #e7e7e714;
+    border: none;
+    border-left: 2px solid #ccc;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    font-size: 2rem;
+    color: #E7E7E7;
+    padding: 0 100px 0 20px;
+    resize: none;
+}
+.sixth-sect-form textarea{
+    height: 500px;
+}
+
+
+.sixth-sect-form input::placeholder{
+    color: #696868da;
+    font-size: 2rem;
+}
+.sixth-sect-form textarea::placeholder{
+    color: #696868da;
+    font-size: 2rem;
+}
+
+.sixth-sect-form textarea{
+    resize
+    :none;
+    height: 100px;
+}
+
+
+.sixth-sect-form button{
+    background: none;
+    color: #E7E7E7;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 3rem;
+}
+
+.sixth-sect-form button:hover{
+    transform: scale(1.05);
+    color: #ff5100;
+}
+
+.sixth-sect-info-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 6rem;
+    margin: -6rem 0 0 15rem;
+}
+
+.sixth-sect-info-wrapper p, h5{
+    font-size: 2rem;
 }
 
 /* -------------------------- */
@@ -455,24 +572,6 @@ html{
 
 .img.in-view{
     animation: appear 0.5s forwards;
-}
-
-/* ---- Section five ---- */
-
-.contactSect-wrapper{
-    width: 100vw;
-    height: 100vh;
-}
-
-.fthSect-text-wrapper{
-    position: relative;
-}
-
-.fthSect-text-wrapper h4{
-    position: absolute;
-    font-size: 5rem;
-    text-align: center;
-    font-weight: 600;
 }
 
 @media only screen and (max-width: 1190px){
@@ -549,7 +648,4 @@ html{
     }
 }
 
-
-
-/* me quede en que iba a ahcer el blurSquare pero se puso blur todo, averiguar como se hacer eso, ya subi el commit anterior, empezamos a ahcer la seccion del about, toca cambiar el orden en el html, camviar sect-2 por secr 3, y asi sesecivamente, no hacer nada nada mas hasta que termine de hcaer el about section. luego arregalr algun error, y toca hacer la seccion se Get in touch, y luego el fotter, posiblememte hacer un nav bar ue aparezca cuando se haga scroll*/
     

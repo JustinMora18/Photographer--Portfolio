@@ -14,6 +14,7 @@ html{
 
 .hero{
     background-image: url(assets/bg.png);
+    ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,7 +33,7 @@ html{
 }
 
 .title-center h1{
-    font-size: 12rem;
+    font-size: 6rem;
     text-align: center;
     font-weight: 900;
     line-height: 0.8;
@@ -141,8 +142,8 @@ html{
 }
 
 .about-photo-and-text-wrapper p{
-    color: #E7E7E7;
-    font-size: 2rem;
+    color: #f8eeee;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -175,12 +176,12 @@ html{
 }
 
 .sec-two-name h5{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #E7E7E7;
 }
 
 .profession h5{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #e7e7e75a;
 }
 
@@ -211,7 +212,7 @@ html{
 .gallery-text h4{
     position: relative;
     width: 400px;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     line-height: 0.8;
     color: #000000;
@@ -306,7 +307,7 @@ html{
 .fourth-sect-text{
     position: absolute;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #E7E7E7;    
     margin: 20%;
@@ -336,7 +337,7 @@ html{
 
 .fifth-sect-gallery-title h4{
     color: #000000;
-    font-size: 14rem;
+    font-size: 6rem;
     font-weight: 900;
     opacity: 0;
     transition: transform 0.4s ease;
@@ -382,7 +383,7 @@ html{
     transform: translate(-50%, -50%);
     opacity: 0;
     color: #E7E7E7;           
-    font-size: 2rem;  
+    font-size: 1.5rem;  
     text-align: center;
     transition: opacity 0.3s ease;
     pointer-events: none;  
@@ -405,7 +406,7 @@ html{
 
 .fifth-sect-galleryOptions-wrapper a{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
@@ -457,7 +458,7 @@ html{
 
 .sixth-sect-text-wrapper h4{
     color: #E7E7E7;
-    font-size: 10rem;
+    font-size: 6rem;
     text-align: center;
     font-weight:900;
     line-height: 0.8;
@@ -483,7 +484,7 @@ html{
 }
 
 .sixth-sect-form label{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .sixth-sect-form{
@@ -501,7 +502,7 @@ html{
     border-left: 2px solid #ccc;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #E7E7E7;
     padding: 0 100px 0 20px;
     resize: none;
@@ -513,11 +514,11 @@ html{
 
 .sixth-sect-form input::placeholder{
     color: #696868da;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .sixth-sect-form textarea::placeholder{
     color: #696868da;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .sixth-sect-form textarea{
@@ -530,7 +531,7 @@ html{
 .sixth-sect-form button{
     background: none;
     color: #E7E7E7;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border: none;
     margin-top: 3rem;
@@ -551,7 +552,7 @@ html{
 }
 
 .sixth-sect-info-wrapper p, h5{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* -------------------------- */

@@ -47,31 +47,35 @@ html{
     text-shadow: 0 0 100px #000000;
     color: #E7E7E7;
 }
+
 /* ---- section one - nav left ---- */
 
 .nav-left{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     margin-left: 10rem;
-    padding-left: 50px;
 }
 
-.nav-left a{
+.nav-left-option{
+    transition: transform 0.09s ease-in-out;
+}
+
+.nav-left-option-inner a{
     position: relative;
-    font-weight: 600;
     font-size: 2rem;
+    font-weight: 600;
     text-decoration: none;
-    text-align: center;
     color: #E7E7E7;
     text-shadow: 0 0 50px #000000a6;
     cursor: pointer;
 }
 
-.nav-left a::after{
+.nav-left-option-inner a::after{
     content: '';
     position: absolute;
-    width: 110%;
-    height: 3px;
+    width: 115%;
+    height: 4px;
     background-color: #ff5100;
     bottom: 2px;
     left: -6rem;
@@ -81,9 +85,13 @@ html{
     transition: transform 0.3s ease-out;
 }
 
-.nav-left a:hover::after{
+.nav-left-option-inner a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.nav-left-option:hover{
+    transform: scale(1.20) translateY(-5px) translateX(10px) rotate(-2deg);
 }
 
 /* ---- section one - Phrase Right ---- */
@@ -111,6 +119,7 @@ html{
 }
 
 /* ---- section two - About  ---- */
+
 .about-sect-two-wrapper{
     background-image: url(assets/aboutIMGs/aboutBg1.png) ;
     width: 100vw;
@@ -189,10 +198,11 @@ html{
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7));
 }
 
-
 /* ---- section three - gallery ---- */
 
 .sec-three-gallery{
+    width: 100vw;
+    height: 60vh;
     display: flex;
     gap: 0.2rem;
     justify-content: center;
@@ -203,6 +213,7 @@ html{
 }
 
 /* ---- sect three - gallery - text */
+
 .gallery-text{
     margin-top: 7rem;
 }
@@ -226,7 +237,7 @@ html{
     content: '';
     position: absolute;
     width: 45%;
-    height: 3px;
+    height: 4px;
     background-color: #ff5100;
     bottom: 0px;
     left: 0;
@@ -242,10 +253,14 @@ html{
 }
 
 /* ---- section three- gallery - wrapper ---- */
+
 .gallery-wrapper{
     display: flex;
+    position: relative;
     gap: 0.5rem;
     flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
 }
 
 .gallery-wrapper img{
@@ -290,7 +305,7 @@ html{
     background-position: center;
     background-size:auto;
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     position: relative;
     border: 20px solid #E7E7E7;
     box-sizing: border-box;
@@ -302,54 +317,91 @@ html{
     font-size: 1.5rem;
     font-weight: 600;
     color: #E7E7E7;    
-    margin: 20%;
+    margin: 7% 10%;
 }
 
 /* ---- section five  ---- */
 
-.hero-fifth-sect{
-    border: 20px solid #E7E7E7;
-    border-top: none;
+.section-five{
+    height: 100vh;
     width: 100vw;
-    height: 265vh;
     background-color: #E7E7E7;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 5rem; 
+    gap: 5rem;
+    border: 20px solid #E7E7E7;
+    border-top: none;
     box-sizing: border-box;
+    align-items: center;
+}
+
+.hero-fifth-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* ---- fifth sect - tittle ---- */
 
 .fifth-sect-gallery-title{
     position: relative;
-    margin-bottom: 3rem;
+    text-align: start;
+    margin: 6rem 0;
 }
 
 .fifth-sect-gallery-title h4{
     color: #000000;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 900;
-    opacity: 0;
+    line-height: 6.5rem;
     transition: transform 0.4s ease;
     cursor: pointer;
+
+}
+
+.fifth-sect-text{
+    transition: transform 0.3s ease;
+}
+
+.fifth-sect-text:hover{
+    transform: scale(1.05);
 }
 
 /* ---- fifth sect - wrapper ---- */
 
 .fifth-sect-gallery-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
-    margin: 0 auto;
 }
 
-.fifth-sect-gallery-wrapper img{
+.fifth-sect-gallery-wrapper .img{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
     border-radius: 25px;
+    height: 250px;
+    height: auto;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.20s ease-in-out; 
+    aspect-ratio: 1/1.07;
+}
+
+.fifth-sect-gallery-wrapper .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+    transition: filter 0.3s ease, transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.fifth-sect-gallery-wrapper .img:hover img{
+    filter: brightness(30%);
 }
 
 .fifth-sect-gallery-wrapper div{
@@ -367,20 +419,19 @@ html{
     filter: brightness(30%);
 }
 
-.fifth-sect-gallery-wrapper > div .album-name {
+.fifth-sect-gallery-wrapper > div .album-num{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 10%;
+    left: 10%;
     opacity: 0;
-    color: #E7E7E7;           
-    font-size: 1.5rem;  
-    text-align: center;
+    color: #E7E7E7;
+    font-size: 2.5rem;       
+    font-weight: 900;   
     transition: opacity 0.3s ease;
     pointer-events: none;  
 }
 
-.fifth-sect-gallery-wrapper > div:hover .album-name {
+.fifth-sect-gallery-wrapper > div:hover .album-num{
     opacity: 1;
 }
 
@@ -388,10 +439,11 @@ html{
 
 .fifth-sect-galleryOptions-wrapper{
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .galleryOption{
-    margin: -3rem 4rem 3rem 1rem;
     transition: transform 0.09s ease-in-out;
 }
 
@@ -409,7 +461,7 @@ html{
 .fifth-sect-galleryOptions-wrapper a::after{
     content: '';
     position: absolute;
-    width: 108%;
+    width: 115%;
     height: 4px;
     background-color: #ff5100;
     bottom: 2px;
@@ -426,10 +478,11 @@ html{
 }
 
 .fifth-sect-galleryOptions-wrapper .galleryOption:hover{
-    transform: scale(1.20) rotate(2deg);
+    transform: scale(1.1) translateY(-11px) translateX(20px) rotate(-2deg) ;
 }
 
 /* ---- Section sixth ---- */
+
 .contact-sect{
     background-image: url(assets/sthSection/sth-Sect-bg.png);
     background-repeat: no-repeat;
@@ -498,15 +551,16 @@ html{
     padding: 0 100px 0 20px;
     resize: none;
 }
+
 .sixth-sect-form textarea{
     height: 500px;
 }
-
 
 .sixth-sect-form input::placeholder{
     color: #696868da;
     font-size: 1.5rem;
 }
+
 .sixth-sect-form textarea::placeholder{
     color: #696868da;
     font-size: 1.5rem;
@@ -517,7 +571,6 @@ html{
     :none;
     height: 100px;
 }
-
 
 .sixth-sect-form button{
     background: none;

@@ -12,13 +12,14 @@ function animateOnView(targetSelector, animationCallback, threshold = 0.5) {
     if (el) observer.observe(el);
 }
 
-animateOnView('.nav-left', () => {
+animateOnView('.nav-left-option-inner', () => {
     anime({
-        targets: '.nav-left a',
+        targets: '.nav-left-option-inner',
         translateX: [ -50, 0 ],
         opacity: [ 0, 1 ],
         duration: 1000,
         delay: anime.stagger(200),
+        easing: 'easeOutExpo'
     });
 });
 
@@ -40,12 +41,30 @@ animateOnView('.phrase-right', () => {
     });
 });
 
+animateOnView('.blurSquare', () => {
+    anime({
+        targets: '.blurSquare',
+        translateX: [-50, 0],
+        opacity: [0, 1],
+        duration: 4000,
+    });
+});
+
+animateOnView('.sect-two-text-wrapper', () => {
+    anime({
+        targets: '.sect-two-text-wrapper',
+        translateX: [50, 0],
+        opacity: [0, 1],
+        duration: 4000,
+    });
+});
+
 animateOnView('.gallery-wrapper-one', () => {
     anime({
         targets: '.gallery-wrapper-one',
         translateX: [0, 150],
         opacity: [0, 1],
-        duration: 3000,
+        duration: 4000,
     });
 });
 
@@ -54,26 +73,36 @@ animateOnView('.gallery-wrapper-two', () => {
         targets: '.gallery-wrapper-two',
         translateX: [150, 0],
         opacity: [0, 1],
-        duration: 3000,
+        duration: 4000,
     });
 });
 
-animateOnView('.galleryOption', () => {
+animateOnView('.fourth-sect-text', () => {
     anime({
-        targets: '.galleryOption a',
-        translateX: [ -50, 0 ],
-        opacity: [ 0, 2 ],
-        duration: 3000,
-        delay: anime.stagger(100),
-    });
-});
-
-animateOnView('.fifth-sect-text', () => {
-    anime({
-        targets: '.fifth-sect-text',
+        targets: '.fourth-sect-text',
         translateY: [50, 0],
         opacity: [0, 1],
-        duration: 1500,
+        duration: 4000,
+    });
+});
+
+animateOnView('.fifth-sect-gallery-title-inner', () => {
+    anime({
+        targets: '.fifth-sect-gallery-title-inner',
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        duration: 1000,
+        easing: 'easeOutExpo'
+    });
+});
+
+animateOnView('.galleryOption-inner', () => {
+    anime({
+        targets: '.galleryOption-inner',
+        translateX: [ -50, 0 ],
+        opacity: [ 0, 1 ],
+        duration: 1000,
+        delay: anime.stagger(200),
         easing: 'easeOutExpo'
     });
 });
@@ -94,5 +123,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     imgs.forEach(img => observer.observe(img));
 });
-
-

@@ -32,6 +32,15 @@ animateOnView('.title-center', () => {
     });
 });
 
+animateOnView('.sixth-sect-text-wrapper-inner', () => {
+    anime({
+        targets: '.sixth-sect-text-wrapper-inner',
+        scale: [0.8, 1],
+        opacity: [0, 1],
+        duration: 1000,
+    });
+});
+
 animateOnView('.phrase-right', () => {
     anime({
         targets: '.phrase-right',
@@ -93,6 +102,24 @@ animateOnView('.fifth-sect-gallery-title-inner', () => {
         opacity: [0, 1],
         duration: 1000,
         easing: 'easeOutExpo'
+    });
+});
+
+animateOnView('.sixth-sect-info-wrapper', () => {
+    anime({
+        targets: '.sixth-sect-info-wrapper',
+        translateY: [50, 0],
+        opacity: [0, 1],
+        duration: 4000,
+    });
+});
+
+animateOnView('.sixth-sect-form', () => {
+    anime({
+        targets: '.sixth-sect-form',
+        translateX: [-50, 0],
+        opacity: [0, 1],
+        duration: 4000,
     });
 });
 

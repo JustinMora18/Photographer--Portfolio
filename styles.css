@@ -484,6 +484,11 @@ html{
 /* ---- Section sixth ---- */
 
 .contact-sect{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
     background-image: url(assets/sthSection/sth-Sect-bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -493,11 +498,6 @@ html{
     border: 20px solid #E7E7E7;
     overflow: hidden;
     box-sizing: border-box;
-}
-
-.sixth-sect-text-wrapper{
-    position: relative;
-    margin-top: 2rem;
 }
 
 .sixth-sect-text-wrapper h4{
@@ -512,9 +512,9 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15rem;
+    gap: 7rem;
     justify-content: center;
-    margin-top: 10rem;
+    align-items: center;
 }
 
 .text-white{
@@ -535,15 +535,15 @@ html{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .sixth-sect-form input, .sixth-sect-form textarea{
     width: 100%;
     height: 70px;
-    background-color: #e7e7e714;
+    background-color: #e7e7e700;
     border: none;
-    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
     font-size: 1.5rem;
@@ -552,17 +552,13 @@ html{
     resize: none;
 }
 
-.sixth-sect-form textarea{
-    height: 500px;
-}
-
 .sixth-sect-form input::placeholder{
-    color: #696868da;
+    color: #E7E7E7;
     font-size: 1.5rem;
 }
 
 .sixth-sect-form textarea::placeholder{
-    color: #696868da;
+    color: #E7E7E7;
     font-size: 1.5rem;
 }
 
@@ -578,7 +574,6 @@ html{
     font-size: 1.5rem;
     font-weight: 600;
     border: none;
-    margin-top: 3rem;
 }
 
 .sixth-sect-form button:hover{
@@ -590,9 +585,8 @@ html{
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    gap: 6rem;
-    margin: -6rem 0 0 15rem;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .sixth-sect-info-wrapper p, h5{

@@ -323,7 +323,7 @@ html{
 /* ---- section five  ---- */
 
 .section-five{
-    height: 120vh;
+    height: 100%;
     width: 100vw;
     background-color: #E7E7E7;
     display: flex;
@@ -356,7 +356,6 @@ html{
     line-height: 6.5rem;
     transition: transform 0.4s ease;
     cursor: pointer;
-
 }
 
 .fifth-sect-text{
@@ -367,6 +366,11 @@ html{
     transform: scale(1.05);
 }
 
+.fifth-sect-gallery-title-inner{
+    height: auto;
+}
+
+
 /* ---- fifth sect - wrapper ---- */
 
 .fifth-sect-gallery-wrapper{
@@ -375,6 +379,7 @@ html{
     gap: 0.5rem;
 }
 
+
 .fifth-sect-gallery-wrapper .img{
     display: flex;
     align-items: center;
@@ -382,7 +387,6 @@ html{
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-    height: 250px;
     height: auto;
     object-fit: cover;
     cursor: pointer;
@@ -700,7 +704,9 @@ html{
         transform: translate(-100%);
     }
 }
+
 /* -------------------------- */
+
 @keyframes appear{
     from{
     opacity: 0;
@@ -720,76 +726,146 @@ html{
     animation: appear 0.5s forwards;
 }
 
-@media only screen and (max-width: 1190px){
-    .hero{
-        flex-direction: column;
-    }
 
-    .nav-left{
-        flex-direction: row;
-        gap: 40px;
-        order: 3; 
-        padding-bottom: 20rem;
-        margin: 0 2rem;
-    }
-    
+@media (max-width: 1440px) {
+    /* section one */
     .nav-left a{
         font-size: 1.4rem;
     }
 
-    .title-center{
-        order: 2;
-    }
-
     .title-center h1{
         font-size: 8rem;
-
     }
 
-    .phrase-right{
-        margin: 0 3rem;
-        padding-top: 20rem;
-        order: 1;
+    .phrase-right h4{
+        font-size: 1.4rem;
+    }
+
+    /* section 2 */
+
+    .sect-two-text-wrapper{
+        width: 40vw;
     }
     
-    .phrase{
-        font-size: 1rem;
+    .about-photo-and-text-wrapper p{
+        font-size: 1.4rem;
+    }
+    
+    .sec-two-name h5{
+        font-size: 1.4rem;
+    }
+    
+    .profession h5{
+        font-size: 0.9rem;
+    }
+    
+    .blurSquare{
+        width: 320px;
+        height: 360px;
+    }
+    
+    .photo img{
+        width: 350px;
+        height: 380px;
+    }
+    
+    /* section 3 */
+    
+    .sec-three-gallery{
+        height: 50vh;
+    }
+    
+    .gallery-wrapper img{
+        width: 300px;
+    }
+    
+    .gallery-text{
+        margin-top: 6rem;
+    }
+    
+    /* section 4 */
+    .hero-fthSect{
+        height:25vh;
     }
 
-    .BR{
-        display: none;
+    .fourth-sect-text{
+        font-size: 1.4rem;
+        margin: 5% 12%;
+    }
+    
+    /* section 5 */
+    
+    .fifth-sect-gallery-title h4{
+        font-size: 7rem;
+        line-height: 5.7rem;
+    }
+
+    .fifth-sect-galleryOptions-wrapper{
+        gap: 0.8rem;
+        margin-bottom: 4rem;
+    }
+    
+    .fifth-sect-gallery-wrapper .img{
+        height: auto;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper a{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper a::after{
+        width: 115%;
+        height: 3px;
+    }
+    
+    .fifth-sect-gallery-wrapper > div .album-num{
+        font-size: 2.2rem;       
+    }
+    
+    
+    /* sextion 6 */
+    
+    .sixth-sect-text-wrapper h4{
+        font-size: 5rem;
+    }
+    
+    .sixth-sect-form input, .sixth-sect-form textarea{
+        height: 60px;
+        font-size: 1.4rem;
+        padding: 0 50px 0 10px;
+    }
+    
+    .sixth-sect-form input::placeholder{
+        font-size: 1.4rem;
+    }
+    
+    .sixth-sect-form textarea::placeholder{
+        font-size: 1.4rem;
+    }
+    
+    .sixth-sect-form button{
+        font-size: 1.4rem;
+    }
+    
+    .sixth-sect-info-wrapper p, h5{
+        font-size: 1.4rem;
+    }
+    
+    /* footer */
+    .thanksMassage-wrapper p{
+        font-size: 1.4rem;
+    }
+    
+    .footer-links a,
+    .social-links a{
+        margin: 0 13px;
+        font-size: 1.4rem;
+    }
+    
+    .scrollText-wrapper{
+        font-size: 0.9rem;
+        padding-block: 6px;
     }
 }
 
-@media only screen and (max-width: 480px){
-    .nav-left{
-        order: 3; 
-    }
-    
-    .nav-left a{
-        font-size: 1rem;
-    }
-
-    .title-center{
-        order: 2;
-    }
-
-    .title-center h1{
-        font-size: 6rem;
-
-    }
-
-    .phrase-right{
-        margin: 0 4rem;
-        order: 1;
-    }
-    
-    .phrase{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    .BR{
-        display: none;
-    }
-}

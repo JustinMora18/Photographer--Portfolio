@@ -62,7 +62,7 @@ html{
 
 .nav-left-option-inner a{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: #E7E7E7;
@@ -103,7 +103,7 @@ html{
 .phrase-right h4{
     text-align: center;
     line-height: 1;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     transition: transform 0.3s ease-out, text-shadow 0.3s ease-out;
 }
@@ -918,7 +918,7 @@ html{
     
     .blurSquare{
         width: 280px;
-        height: 322px;
+        height: 323px;
     }
     
     .photo img{
@@ -958,7 +958,7 @@ html{
     }
     
     .fifth-sect-gallery-title h4{
-        font-size: 4rem;
+        font-size: 6rem;
         line-height: 3.7rem;
     }
     
@@ -1037,5 +1037,153 @@ html{
 }  
 
 @media (max-width: 992px) {
+    .nav-left a{
+        font-size: 1.2rem;
+    }
+            
+    .title-center h1{
+        font-size: 6em;
     
+    }
+    
+    .phrase-right h4{
+        font-size: 1.2rem;
+    }
+    
+    /* section 2 */
+    
+    .sect-two-text-wrapper{
+        width: 35vw;
+    }
+    
+    .about-photo-and-text-wrapper p{
+        font-size: 1.2rem;
+    }
+    
+    .sec-two-name h5{
+        font-size: 1.2rem;
+    }
+    
+    .profession h5{
+        font-size: 0.8rem;
+    }
+    
+    .blurSquare{
+        width: 260px;
+        height: 296px;
+    }
+    
+    .photo img{
+        width: 300px;
+        height: 310px;
+    }
+    
+    /* section 3 */
+    
+    .sec-three-gallery{
+        height: 30vh;
+    }
+    
+    .gallery-wrapper img{
+        width: 200px;
+    }
+    
+    .gallery-text{
+        margin-top: 4rem;
+    }
+    
+    /* section 4 */
+
+    .hero-fthSect{
+        height:25vh;
+    }
+
+    .fourth-sect-text{
+        font-size: 1.2rem;
+        margin: 4% 8%;
+    }
+    
+    /* section 5 */
+
+    .section-five{
+        height: 70vh;
+    }
+    
+    .fifth-sect-gallery-title h4{
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper{
+        gap: 0.6rem;
+        margin-bottom: 5rem;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper a{
+        font-size: 1.2rem;
+    }
+    
+    .fifth-sect-gallery-wrapper > div .album-num{
+        font-size: 2.1rem;       
+    }
+    
+    /* sextion 6 */
+    
+    .sixth-sect-text-wrapper h4{
+        font-size: 4rem;
+    }
+    
+    .sixth-sect-form input, .sixth-sect-form textarea{
+        height: 50px;
+        font-size: 1.2rem;
+        padding: 0 60px 0 10px;
+    }
+    
+    .sixth-sect-form input::placeholder{
+        font-size: 1.2rem;
+    }
+    
+    .sixth-sect-form textarea::placeholder{
+        font-size: 1.2rem;
+    }
+    
+    .sixth-sect-form button{
+        font-size: 1.2rem;
+    }
+    
+    .sixth-sect-info-wrapper p, h5{
+        font-size: 1.2rem;
+    }
+    
+    /* footer */
+
+    .thanksMassage-wrapper p{
+        font-size: 1.3rem;
+    }
+
+    .social-links{
+        gap: 3rem;
+    }    
+
+    .footer-links{
+        gap: 2rem;
+    }    
+    
+    .footer-links a,
+    .social-links a{
+        font-size: 1.3rem;
+    }
+
+    .social-links svg{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .scrollText-wrapper{
+        font-size: 0.8rem;
+    }
+
+    .allRtsRvd{
+        font-size: 0.8rem;
+    }
 }

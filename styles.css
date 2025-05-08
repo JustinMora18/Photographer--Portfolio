@@ -305,7 +305,7 @@ html{
     background-image: url(assets/rdSectionIMGS/bgRdSect-01.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:auto;
+    background-size: cover;
     width: 100vw;
     height: 30vh;
     position: relative;
@@ -415,7 +415,6 @@ html{
 
 .fifth-sect-gallery-wrapper > div img{
     display: block;
-    width: 100%;
     transition: filter 0.3s ease;
 }  
 
@@ -482,7 +481,7 @@ html{
 }
 
 .fifth-sect-galleryOptions-wrapper .galleryOption:hover{
-    transform: scale(1.1) translateY(-11px) translateX(20px) rotate(-2deg) ;
+    transform: scale(1.20) translateY(-5px) translateX(10px) rotate(-2deg);
 }
 
 /* ---- Section sixth ---- */
@@ -613,13 +612,14 @@ html{
     margin: 2%;
 }
 
-.thanksMassage-wrapper{
-    padding-bottom: 2rem;
-}
-
 .thanksMassage-wrapper p{
     font-size: 1.5rem;
     font-weight: 900;
+}
+
+hr.solid {
+    border-top: 0.5px solid #000000;
+    margin: 3% 7%;
 }
 
 .footer-links{
@@ -893,7 +893,6 @@ html{
             
     .title-center h1{
         font-size: 8em;
-    
     }
     
     .phrase-right h4{
@@ -1189,7 +1188,6 @@ html{
     }
 }
 
-/* Móobiles (iPhone 14 Pro Max) */
 @media (max-width: 825px) and (max-height: 1300px){
     .hero{
         flex-direction: column;
@@ -1203,10 +1201,6 @@ html{
         gap: 4rem;
         margin: 0;
         order: 3;
-    }
-
-    .nav-left a{
-        font-size: 1.2rem;
     }
 
     .nav-left-option-inner a::after{
@@ -1224,10 +1218,6 @@ html{
     .phrase-right{
         margin: 0;
         order: 1;
-    }
-    
-    .phrase-right h4{
-        font-size: 1.2rem;
     }
 
     .phrase-right h4:hover{
@@ -1294,22 +1284,18 @@ html{
     .hero-fthSect{
         height:35vh;
     }
-
-    .fourth-sect-text{
-        font-size: 1.2rem;
-    }
     
     /* section 5 */
-
     .section-five{
-        height: 100vh;
+        height:100vh;
         flex-direction: column;
         gap: 0;
         justify-content: center;
     }
 
     .hero-fifth-sect{
-        gap: 4rem;
+        gap: 2rem;
+        flex-direction: column;
         }
 
     .fifth-sect-gallery-title{
@@ -1323,7 +1309,8 @@ html{
     
     .fifth-sect-galleryOptions-wrapper{
         flex-direction: row;
-        gap: 4rem;
+        gap: 2.5rem;
+        margin: 0 0 3rem 0;
     }
     
     .fifth-sect-galleryOptions-wrapper a{
@@ -1334,7 +1321,7 @@ html{
         font-size: 1.8rem;       
     }
     
-    /* sextion 6 */
+    /* section 6 */
 
     .contact-sect{
         flex-direction: row;
@@ -1350,7 +1337,7 @@ html{
     }
     
     .sixth-sect-text-wrapper h4{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .sixth-sect-text-wrapper br{
@@ -1378,11 +1365,11 @@ html{
     .sixth-sect-info-wrapper p, h5{
         font-size: 1.2rem;
     }
-    
+
     /* footer */
 
     .thanksMassage-wrapper p{
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
 
     .social-links{
@@ -1390,12 +1377,14 @@ html{
     }    
 
     .footer-links{
-        gap: 2rem;
+        flex-direction: column;
+        text-align: left;
+        gap: 0.5rem;
     }    
     
     .footer-links a,
     .social-links a{
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
 
     .social-links svg{
@@ -1409,5 +1398,234 @@ html{
 
     .allRtsRvd{
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-left{
+        flex-direction: row;
+        gap: 4rem;
+        margin: 0;
+        order: 3;
+    }
+
+    .nav-left-option-inner a::after{
+        height: 2.5px;
+    }
+
+    .title-center{
+        order: 2;
+    }
+
+    .title-center h1{
+        font-size: 3.5em;
+    }
+
+    .title-center h1:hover{
+        transform: none;
+    }
+    
+    .nav-left-option-inner a{
+        font-size: 1rem;
+    }
+
+    .phrase-right h4{
+        font-size: 1rem;
+    }
+
+    .phrase-right h4:hover{
+        transform: none;
+    }
+
+    .nav-left-option-inner a::after{
+        background-color: transparent;        
+    }
+    
+    .nav-left-option:hover{
+    transform: none;
+    }
+
+    /* section 2 */
+    .about-photo-and-text-wrapper{
+        gap: 7rem;
+    }
+    
+    .sect-two-text-wrapper{
+        text-align: center;
+    }
+
+    .blurSquare{
+        width: 210px;
+        height: 220px;
+    }
+    
+    .photo img{
+        width: 205px;
+        height:215px;
+        margin: 1rem 0 0 2rem;
+    }
+
+    .about-photo-and-text-wrapper p{
+        font-size: 1rem;
+    }
+    
+    .sec-two-name h5{
+        font-size: 1rem;
+    }
+    
+    .profession h5{
+        font-size: 0.8rem;
+    }
+
+    /* section 3 */
+    .sec-three-gallery{
+        height: 65vh;
+        flex-direction: row;
+    }
+
+    .gallery-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+    }
+    
+    .gallery-wrapper img{
+        max-width: 150px;
+    }
+    
+    .gallery-wrapper-one img:hover{
+        transform: scale(1.04) translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .gallery-wrapper-two img:hover{
+        transform: scale(1.04) translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    .gallery-text{
+        display: none;
+    }
+    
+    /* section 4 */
+    .hero-fthSect{
+        height:35vh;
+    }
+
+    .fourth-sect-text{
+        font-size: 1rem;
+    }
+    
+    /* section 5 */
+    .section-five{
+        height:80vh;
+        overflow: hidden;
+    }
+    .hero-fifth-sect{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .fifth-sect-gallery-title h4{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper{ 
+        text-align: center;
+        align-items: center;
+        width: 80%;
+        gap: 2rem;
+        margin: 1rem 3rem 3rem;
+        flex-wrap: wrap;
+    }
+
+    .galleryOption {
+        flex: 1 1 80px;
+    }
+    
+    .fifth-sect-galleryOptions-wrapper a{
+        font-size: 0.7rem;
+    }
+
+    .fifth-sect-gallery-wrapper .img img{
+        border-radius: 15px;
+    }
+
+    .fifth-sect-gallery-wrapper .img{
+        border-radius: 15px;
+    }
+    
+    .fifth-sect-gallery-wrapper > div .album-num{
+        font-size: 1.5rem;       
+    }
+
+    /* section 6 */
+    .sixth-sect-contact-items-wrapper{
+        gap: 5rem;
+    }
+
+    .sixth-sect-text-wrapper h4{
+        font-size: 3rem;
+    }
+    
+    .sixth-sect-form input, .sixth-sect-form textarea{
+        font-size: 1rem;
+        padding: 0 60px 0 5px;
+    }
+    
+    .sixth-sect-form input::placeholder{
+        font-size: 1rem;
+    }
+    
+    .sixth-sect-form textarea::placeholder{
+        font-size: 1rem;
+    }
+    
+    .sixth-sect-form button{
+        font-size: 1rem;
+    }
+
+    .sixth-sect-info-wrapper{
+        flex-direction: column;
+        margin-top: -10rem;
+        gap: 2rem;
+    }
+    
+    .sixth-sect-info-wrapper p, h5{
+        font-size: 1rem;
+    }
+
+    /* footer */
+
+    .thanksMassage-wrapper p{
+        font-size: 0.7rem;
+    }
+
+    .social-links{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }    
+
+    .footer-links{
+        flex-direction: column;
+        text-align: left;
+        gap: 0.5rem;
+    }    
+    
+    .footer-links a,
+    .social-links a{
+        font-size: 0.7rem;
+    }
+
+    .social-links svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .scrollText-wrapper{
+        margin-top: -3rem;
     }
 }

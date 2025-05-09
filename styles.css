@@ -224,7 +224,7 @@ html{
     transition: transform 0.3s ease;
     cursor: pointer;
     position: relative;
-    width: 400px;
+    width: 350px;
     font-size: 2rem;
     text-align: center;
     line-height: 0.8;
@@ -418,10 +418,6 @@ html{
     transition: filter 0.3s ease;
 }  
 
-.fifth-sect-gallery-wrapper > div:hover img{
-    filter: brightness(30%);
-}
-
 .fifth-sect-gallery-wrapper > div .album-num{
     position: absolute;
     bottom: 10%;
@@ -593,10 +589,9 @@ html{
 }
 
 /* ---- footer ---- */
-
 .footer{
+    width: 97.9vw;
     border: 20px solid #E7E7E7;
-    border-bottom: none;
     background-color: #E7E7E7;
     padding: 20px 0;
     text-align: center;
@@ -790,6 +785,11 @@ hr.solid {
     .gallery-text{
         margin-top: 6rem;
     }
+
+    .gallery-text h4::after{
+        width: 45%;
+        margin: -0.40rem 6rem;
+    }
     
     /* section 4 */
 
@@ -799,7 +799,7 @@ hr.solid {
 
     .fourth-sect-text{
         font-size: 1.4rem;
-        margin: 8%;
+        margin: 5%;
     }
     
     /* section 5 */
@@ -949,7 +949,7 @@ hr.solid {
 
     .fourth-sect-text{
         font-size: 1.3rem;
-        margin: 14%;
+        margin: 10%;
     }
     
     /* section 5 */
@@ -1080,17 +1080,30 @@ hr.solid {
     }
     
     /* section 3 */
+    .gallery-wrapper-one{
+        margin-right: 20rem;
+    }
     
+    .gallery-wrapper-two{
+        margin-right: 10rem;
+    }
+
     .sec-three-gallery{
         height: 30vh;
     }
     
     .gallery-wrapper img{
-        width: 200px;
+        width: 150px;
+        height: 140px;
     }
     
     .gallery-text{
-        margin-top: 4rem;
+        margin-top: 3rem;
+    }
+
+    .gallery-text h4{
+        width: 250px;
+        line-height: 0.8;
     }
     
     /* section 4 */
@@ -1239,13 +1252,12 @@ hr.solid {
         width: 60vw;
         text-align: center;
     }
-    
+
     .blurSquare{
         padding: 0;
     }
     
     /* section 3 */
-    
     .sec-three-gallery{
         height: 45vh;
         padding: 0;
@@ -1402,6 +1414,10 @@ hr.solid {
 }
 
 @media (max-width: 480px) {
+    .hero{
+    border: 10px solid #E7E7E7;
+    }
+    
     .nav-left{
         flex-direction: row;
         gap: 4rem;
@@ -1438,7 +1454,7 @@ hr.solid {
     }
 
     .nav-left-option-inner a::after{
-        background-color: transparent;        
+        content: none;       
     }
     
     .nav-left-option:hover{
@@ -1446,6 +1462,10 @@ hr.solid {
     }
 
     /* section 2 */
+    .about-sect-two-wrapper{
+        border: 10px solid #E7E7E7;
+    }
+
     .about-photo-and-text-wrapper{
         gap: 7rem;
     }
@@ -1465,12 +1485,21 @@ hr.solid {
         margin: 1rem 0 0 2rem;
     }
 
+    .photo img:hover{
+        transform: none;
+    }
+
     .about-photo-and-text-wrapper p{
         font-size: 1rem;
     }
     
     .sec-two-name h5{
         font-size: 1rem;
+    }
+
+    .sec-two-name h5:hover{
+        transform: none;
+        filter: none;
     }
     
     .profession h5{
@@ -1479,30 +1508,26 @@ hr.solid {
 
     /* section 3 */
     .sec-three-gallery{
-        height: 65vh;
-        flex-direction: row;
-    }
-
-    .gallery-wrapper{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.1rem;
+        gap: 10rem;
     }
     
+    .gallery-wrapper-one{
+        margin-right: 0rem;
+    }
+        
     .gallery-wrapper img{
-        max-width: 150px;
+        max-width: 90px;
+        height: 90px;
     }
     
     .gallery-wrapper-one img:hover{
-        transform: scale(1.04) translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        transform: none;
+        box-shadow: none;
     }
     
     .gallery-wrapper-two img:hover{
-        transform: scale(1.04) translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-        z-index: 2;
+        transform: none;
+        box-shadow: none;
     }
 
     .gallery-text{
@@ -1512,6 +1537,7 @@ hr.solid {
     /* section 4 */
     .hero-fthSect{
         height:35vh;
+        border: 10px solid #E7E7E7;
     }
 
     .fourth-sect-text{
@@ -1519,6 +1545,10 @@ hr.solid {
     }
     
     /* section 5 */
+    .hero-fifth-sect{
+        gap: 15px;
+    }
+
     .section-five{
         height:80vh;
         overflow: hidden;
@@ -1532,22 +1562,32 @@ hr.solid {
         font-size: 3rem;
         line-height: 3rem;
     }
-    
-    .fifth-sect-galleryOptions-wrapper{ 
-        text-align: center;
-        align-items: center;
-        width: 80%;
-        gap: 2rem;
-        margin: 1rem 3rem 3rem;
-        flex-wrap: wrap;
-    }
 
+    .fifth-sect-text:hover{
+        transform: none;
+    }
     .galleryOption {
         flex: 1 1 80px;
     }
     
+    .fifth-sect-galleryOptions-wrapper{ 
+        text-align: center;
+        gap: 1.5rem;
+        margin: 0.5rem 3.5rem 5rem 3.5rem;
+        flex-wrap: wrap;
+        line-height: 5px;
+    }
+
     .fifth-sect-galleryOptions-wrapper a{
         font-size: 0.7rem;
+    }
+
+    .fifth-sect-galleryOptions-wrapper a::after{
+        content: none;
+    }
+
+    .fifth-sect-galleryOptions-wrapper .galleryOption:hover{
+        transform: none;
     }
 
     .fifth-sect-gallery-wrapper .img img{
@@ -1559,10 +1599,14 @@ hr.solid {
     }
     
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 1.5rem;       
+        font-size: 1.4rem;       
     }
 
     /* section 6 */
+    .contact-sect{
+        border: 10px solid #E7E7E7;
+    }
+    
     .sixth-sect-contact-items-wrapper{
         gap: 5rem;
     }
@@ -1573,7 +1617,7 @@ hr.solid {
     
     .sixth-sect-form input, .sixth-sect-form textarea{
         font-size: 1rem;
-        padding: 0 60px 0 5px;
+        padding: 0 70px 0 5px;
     }
     
     .sixth-sect-form input::placeholder{
@@ -1599,6 +1643,9 @@ hr.solid {
     }
 
     /* footer */
+    .footer{
+        width: 91.7vw;
+    }
 
     .thanksMassage-wrapper p{
         font-size: 0.7rem;
@@ -1629,3 +1676,4 @@ hr.solid {
         margin-top: -3rem;
     }
 }
+

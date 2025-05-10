@@ -58,6 +58,7 @@ html{
 
 .nav-left-option{
     transition: transform 0.09s ease-in-out;
+    text-align: right;
 }
 
 .nav-left-option-inner a{
@@ -90,7 +91,7 @@ html{
 }
 
 .nav-left-option:hover{
-    transform: scale(1.20) translateY(-5px) translateX(10px) rotate(-2deg);
+    transform: scale(1.20) translateY(-0.3rem) translateX(-1.5rem) rotate(-2deg);
 }
 
 /* ---- section one - Phrase Right ---- */
@@ -98,10 +99,10 @@ html{
 .phrase-right{
     margin-right: 10rem;
     text-shadow: 0 0 50px #00000060;
+    text-align: left;
 }
 
 .phrase-right h4{
-    text-align: center;
     line-height: 1;
     font-size: 1.5rem;
     font-weight: 600;
@@ -238,12 +239,12 @@ html{
 .gallery-text h4::after{
     content: '';
     position: absolute;
-    width: 45%;
+    width: 50%;
     height: 4px;
     background-color: #ff5100;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
-    margin: -0.400rem 6.8rem;
+    margin: -0.4rem 5.5rem;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
@@ -272,7 +273,7 @@ html{
     border-radius: 25px;
     object-fit: cover;
     cursor: pointer;
-    transition: 
+    transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
     position: relative;
@@ -319,7 +320,7 @@ html{
     text-align: justify;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #E7E7E7;    
+    color: #E7E7E7;
 }
 
 /* ---- section five  ---- */
@@ -329,7 +330,7 @@ html{
     height: 120vh;
     background-color: #E7E7E7;
     display: flex;
-    padding: 5rem; 
+    padding: 5rem;
     gap: 5rem;
     border: 20px solid #E7E7E7;
     border-top: none;
@@ -390,7 +391,7 @@ html{
     height: auto;
     object-fit: cover;
     cursor: pointer;
-    transition: transform 0.20s ease-in-out; 
+    transition: transform 0.20s ease-in-out;
     aspect-ratio: 0.5/0.5;
 }
 
@@ -416,7 +417,7 @@ html{
 .fifth-sect-gallery-wrapper > div img{
     display: block;
     transition: filter 0.3s ease;
-}  
+}
 
 .fifth-sect-gallery-wrapper > div .album-num{
     position: absolute;
@@ -424,10 +425,10 @@ html{
     left: 10%;
     opacity: 0;
     color: #E7E7E7;
-    font-size: 2.5rem;       
-    font-weight: 900;   
+    font-size: 2.5rem;
+    font-weight: 900;
     transition: opacity 0.3s ease;
-    pointer-events: none;  
+    pointer-events: none;
 }
 
 .fifth-sect-gallery-wrapper > div:hover .album-num{
@@ -477,7 +478,7 @@ html{
 }
 
 .fifth-sect-galleryOptions-wrapper .galleryOption:hover{
-    transform: scale(1.20) translateY(-5px) translateX(10px) rotate(-2deg);
+    transform: scale(1.20) translateY(-0.8rem) translateX(1rem) rotate(-2deg);
 }
 
 /* ---- Section sixth ---- */
@@ -654,7 +655,7 @@ hr.solid {
 }
 
 .icon-style:hover{
-    fill: #ff5100; 
+    fill: #ff5100;
 }
 
 .social-links{
@@ -749,39 +750,39 @@ hr.solid {
     .sect-two-text-wrapper{
         width: 43vw;
     }
-    
+
     .about-photo-and-text-wrapper p{
         font-size: 1.4rem;
     }
-    
+
     .sec-two-name h5{
         font-size: 1.4rem;
     }
-    
+
     .profession h5{
         font-size: 0.9rem;
     }
-    
+
     .blurSquare{
         width: 320px;
         height: 360px;
     }
-    
+
     .photo img{
         width: 350px;
         height: 380px;
     }
-    
+
     /* section 3 */
-    
+
     .sec-three-gallery{
         height: 50vh;
     }
-    
+
     .gallery-wrapper img{
         width: 300px;
     }
-    
+
     .gallery-text{
         margin-top: 6rem;
     }
@@ -790,7 +791,7 @@ hr.solid {
         width: 45%;
         margin: -0.40rem 6rem;
     }
-    
+
     /* section 4 */
 
     .hero-fthSect{
@@ -801,7 +802,7 @@ hr.solid {
         font-size: 1.4rem;
         margin: 5%;
     }
-    
+
     /* section 5 */
 
     .section-five{
@@ -817,47 +818,47 @@ hr.solid {
         gap: 0.8rem;
         margin-bottom: 4rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper a{
         font-size: 1.4rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper a::after{
         height: 3px;
     }
-    
+
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 2.3rem;       
+        font-size: 2.3rem;
     }
-    
+
     /* sextion 6 */
-    
+
     .sixth-sect-text-wrapper h4{
         font-size: 5rem;
     }
-    
+
     .sixth-sect-form input, .sixth-sect-form textarea{
         height: 60px;
         font-size: 1.4rem;
         padding: 0 80px 0 15px;
     }
-    
+
     .sixth-sect-form input::placeholder{
         font-size: 1.4rem;
     }
-    
+
     .sixth-sect-form textarea::placeholder{
         font-size: 1.4rem;
     }
-    
+
     .sixth-sect-form button{
         font-size: 1.4rem;
     }
-    
+
     .sixth-sect-info-wrapper p, h5{
         font-size: 1.4rem;
     }
-    
+
     /* footer */
 
     .thanksMassage-wrapper p{
@@ -866,8 +867,8 @@ hr.solid {
 
     .social-links{
         gap: 3rem;
-    }    
-    
+    }
+
     .footer-links{
         gap: 4rem;
     }
@@ -876,7 +877,7 @@ hr.solid {
     .social-links a{
         font-size: 1.4rem;
     }
-    
+
     .scrollText-wrapper{
         font-size: 0.9rem;
     }
@@ -890,57 +891,57 @@ hr.solid {
     .nav-left a{
         font-size: 1.3rem;
     }
-            
+
     .title-center h1{
         font-size: 8em;
     }
-    
+
     .phrase-right h4{
         font-size: 1.3rem;
     }
-    
+
     /* section 2 */
-    
+
     .sect-two-text-wrapper{
         width: 40vw;
     }
-    
+
     .about-photo-and-text-wrapper p{
         font-size: 1.3rem;
     }
-    
+
     .sec-two-name h5{
         font-size: 1.3rem;
     }
-    
+
     .profession h5{
         font-size: 0.9rem;
     }
-    
+
     .blurSquare{
         width: 280px;
         height: 323px;
     }
-    
+
     .photo img{
         width: 320px;
         height: 340px;
     }
-    
+
     /* section 3 */
-    
+
     .sec-three-gallery{
         height: 40vh;
     }
-    
+
     .gallery-wrapper img{
         width: 250px;
     }
-    
+
     .gallery-text{
         margin-top: 5rem;
     }
-    
+
     /* section 4 */
 
     .hero-fthSect{
@@ -951,59 +952,59 @@ hr.solid {
         font-size: 1.3rem;
         margin: 10%;
     }
-    
+
     /* section 5 */
 
     .section-five{
         height: 90vh;
     }
-    
+
     .fifth-sect-gallery-title h4{
         font-size: 5rem;
         line-height: 4.7rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper{
         gap: 0.6rem;
         margin-bottom: 5rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper a{
         font-size: 1.3rem;
     }
-    
+
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 2.1rem;       
+        font-size: 2.1rem;
     }
-    
+
     /* sextion 6 */
-    
+
     .sixth-sect-text-wrapper h4{
         font-size: 4rem;
     }
-    
+
     .sixth-sect-form input, .sixth-sect-form textarea{
         height: 50px;
         font-size: 1.3rem;
         padding: 0 70px 0 10px;
     }
-    
+
     .sixth-sect-form input::placeholder{
         font-size: 1.3rem;
     }
-    
+
     .sixth-sect-form textarea::placeholder{
         font-size: 1.3rem;
     }
-    
+
     .sixth-sect-form button{
         font-size: 1.3rem;
     }
-    
+
     .sixth-sect-info-wrapper p, h5{
         font-size: 1.3rem;
     }
-    
+
     /* footer */
 
     .thanksMassage-wrapper p{
@@ -1012,12 +1013,12 @@ hr.solid {
 
     .social-links{
         gap: 2rem;
-    }    
+    }
 
     .footer-links{
         gap: 3rem;
-    }    
-    
+    }
+
     .footer-links a,
     .social-links a{
         font-size: 1.3rem;
@@ -1035,55 +1036,55 @@ hr.solid {
     .allRtsRvd{
         font-size: 0.8rem;
     }
-}  
+}
 
 @media (max-width: 992px) {
     .nav-left a{
         font-size: 1.2rem;
     }
-            
+
     .title-center h1{
         font-size: 6em;
-    
+
     }
-    
+
     .phrase-right h4{
         font-size: 1.2rem;
     }
-    
+
     /* section 2 */
-    
+
     .sect-two-text-wrapper{
         width: 35vw;
     }
-    
+
     .about-photo-and-text-wrapper p{
         font-size: 1.2rem;
     }
-    
+
     .sec-two-name h5{
         font-size: 1.2rem;
     }
-    
+
     .profession h5{
         font-size: 0.8rem;
     }
-    
+
     .blurSquare{
         width: 260px;
         height: 296px;
     }
-    
+
     .photo img{
         width: 300px;
         height: 310px;
     }
-    
+
     /* section 3 */
     .gallery-wrapper-one{
         margin-right: 20rem;
     }
-    
+
     .gallery-wrapper-two{
         margin-right: 10rem;
     }
@@ -1091,12 +1092,12 @@ hr.solid {
     .sec-three-gallery{
         height: 30vh;
     }
-    
+
     .gallery-wrapper img{
         width: 150px;
         height: 140px;
     }
-    
+
     .gallery-text{
         margin-top: 3rem;
     }
@@ -1105,7 +1106,7 @@ hr.solid {
         width: 250px;
         line-height: 0.8;
     }
-    
+
     /* section 4 */
 
     .hero-fthSect{
@@ -1115,59 +1116,59 @@ hr.solid {
     .fourth-sect-text{
         font-size: 1.2rem;
     }
-    
+
     /* section 5 */
 
     .section-five{
         height: 70vh;
     }
-    
+
     .fifth-sect-gallery-title h4{
         font-size: 4rem;
         line-height: 3.2rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper{
         gap: 0.4rem;
         margin-bottom: 6rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper a{
         font-size: 1.2rem;
     }
-    
+
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 1.9rem;       
+        font-size: 1.9rem;
     }
-    
+
     /* sextion 6 */
-    
+
     .sixth-sect-text-wrapper h4{
         font-size: 3rem;
     }
-    
+
     .sixth-sect-form input, .sixth-sect-form textarea{
         height: 40px;
         font-size: 1.2rem;
         padding: 0 60px 0 5px;
     }
-    
+
     .sixth-sect-form input::placeholder{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-form textarea::placeholder{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-form button{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-info-wrapper p, h5{
         font-size: 1.2rem;
     }
-    
+
     /* footer */
 
     .thanksMassage-wrapper p{
@@ -1176,12 +1177,12 @@ hr.solid {
 
     .social-links{
         gap: 1rem;
-    }    
+    }
 
     .footer-links{
         gap: 2rem;
-    }    
-    
+    }
+
     .footer-links a,
     .social-links a{
         font-size: 1.2rem;
@@ -1247,7 +1248,7 @@ hr.solid {
         flex-direction: column;
         gap: 8rem;
     }
-    
+
     .sect-two-text-wrapper{
         width: 60vw;
         text-align: center;
@@ -1256,7 +1257,6 @@ hr.solid {
     .blurSquare{
         padding: 0;
     }
-    
     /* section 3 */
     .sec-three-gallery{
         height: 45vh;
@@ -1271,16 +1271,16 @@ hr.solid {
         align-items: center;
         gap: 0.1rem;
     }
-    
+
     .gallery-wrapper img{
         max-width: 150px;
     }
-    
+
     .gallery-wrapper-one img:hover{
         transform: scale(1.04) translateY(-10px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     }
-    
+
     .gallery-wrapper-two img:hover{
         transform: scale(1.04) translateY(-10px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -1290,13 +1290,13 @@ hr.solid {
     .gallery-text{
         display: none;
     }
-    
+
     /* section 4 */
 
     .hero-fthSect{
         height:35vh;
     }
-    
+
     /* section 5 */
     .section-five{
         height:100vh;
@@ -1318,21 +1318,21 @@ hr.solid {
     .fifth-sect-gallery-title h4{
         line-height: 3.7rem;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper{
         flex-direction: row;
         gap: 2.5rem;
         margin: 0 0 3rem 0;
     }
-    
+
     .fifth-sect-galleryOptions-wrapper a{
         font-size: 0.7rem;
     }
-    
+
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 1.8rem;       
+        font-size: 1.8rem;
     }
-    
+
     /* section 6 */
 
     .contact-sect{
@@ -1347,7 +1347,7 @@ hr.solid {
         flex-wrap: wrap;
         gap: 7rem;
     }
-    
+
     .sixth-sect-text-wrapper h4{
         font-size: 4rem;
     }
@@ -1355,25 +1355,25 @@ hr.solid {
     .sixth-sect-text-wrapper br{
         gap: 2rem;
     }
-    
+
     .sixth-sect-form input, .sixth-sect-form textarea{
         height: 40px;
         font-size: 1.2rem;
         padding: 0 150px 0 5px;
     }
-    
+
     .sixth-sect-form input::placeholder{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-form textarea::placeholder{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-form button{
         font-size: 1.2rem;
     }
-    
+
     .sixth-sect-info-wrapper p, h5{
         font-size: 1.2rem;
     }
@@ -1386,14 +1386,14 @@ hr.solid {
 
     .social-links{
         gap: 1rem;
-    }    
+    }
 
     .footer-links{
         flex-direction: column;
         text-align: left;
         gap: 0.5rem;
-    }    
-    
+    }
+
     .footer-links a,
     .social-links a{
         font-size: 0.7rem;
@@ -1417,7 +1417,7 @@ hr.solid {
     .hero{
     border: 10px solid #E7E7E7;
     }
-    
+
     .nav-left{
         flex-direction: row;
         gap: 4rem;
@@ -1440,7 +1440,7 @@ hr.solid {
     .title-center h1:hover{
         transform: none;
     }
-    
+
     .nav-left-option-inner a{
         font-size: 1rem;
     }
@@ -1454,9 +1454,9 @@ hr.solid {
     }
 
     .nav-left-option-inner a::after{
-        content: none;       
+        content: none;
     }
-    
+
     .nav-left-option:hover{
     transform: none;
     }
@@ -1469,7 +1469,7 @@ hr.solid {
     .about-photo-and-text-wrapper{
         gap: 7rem;
     }
-    
+
     .sect-two-text-wrapper{
         text-align: center;
     }
@@ -1478,7 +1478,7 @@ hr.solid {
         width: 210px;
         height: 220px;
     }
-    
+
     .photo img{
         width: 205px;
         height:215px;
@@ -1492,7 +1492,7 @@ hr.solid {
     .about-photo-and-text-wrapper p{
         font-size: 1rem;
     }
-    
+
     .sec-two-name h5{
         font-size: 1rem;
     }
@@ -1501,7 +1501,7 @@ hr.solid {
         transform: none;
         filter: none;
     }
-    
+
     .profession h5{
         font-size: 0.8rem;
     }
@@ -1510,40 +1510,44 @@ hr.solid {
     .sec-three-gallery{
         gap: 10rem;
     }
-    
-    .gallery-wrapper-one{
-        margin-right: 0rem;
+
+    .gallery-wrapper{
+        justify-content: center;
+        align-items: center;
     }
-        
+
+    .gallery-wrapper-one{
+        margin-right: -0.5rem;
+    }
+
+    .gallery-wrapper-two{
+        margin-right: 8rem;
+    }
+
     .gallery-wrapper img{
         max-width: 90px;
         height: 90px;
     }
-    
+
     .gallery-wrapper-one img:hover{
         transform: none;
         box-shadow: none;
     }
-    
+
     .gallery-wrapper-two img:hover{
         transform: none;
         box-shadow: none;
     }
 
-    .gallery-text{
-        display: none;
-    }
-    
     /* section 4 */
     .hero-fthSect{
-        height:35vh;
         border: 10px solid #E7E7E7;
     }
 
     .fourth-sect-text{
         font-size: 1rem;
     }
-    
+
     /* section 5 */
     .hero-fifth-sect{
         gap: 15px;
@@ -1569,8 +1573,8 @@ hr.solid {
     .galleryOption {
         flex: 1 1 80px;
     }
-    
-    .fifth-sect-galleryOptions-wrapper{ 
+
+    .fifth-sect-galleryOptions-wrapper{
         text-align: center;
         gap: 1.5rem;
         margin: 0.5rem 3.5rem 5rem 3.5rem;
@@ -1597,16 +1601,20 @@ hr.solid {
     .fifth-sect-gallery-wrapper .img{
         border-radius: 15px;
     }
-    
+
     .fifth-sect-gallery-wrapper > div .album-num{
-        font-size: 1.4rem;       
+        display: none;
+    }
+
+    .fifth-sect-gallery-wrapper .img:hover img{
+        filter: brightness(100%);
     }
 
     /* section 6 */
     .contact-sect{
         border: 10px solid #E7E7E7;
     }
-    
+
     .sixth-sect-contact-items-wrapper{
         gap: 5rem;
     }
@@ -1614,20 +1622,20 @@ hr.solid {
     .sixth-sect-text-wrapper h4{
         font-size: 3rem;
     }
-    
+
     .sixth-sect-form input, .sixth-sect-form textarea{
         font-size: 1rem;
         padding: 0 70px 0 5px;
     }
-    
+
     .sixth-sect-form input::placeholder{
         font-size: 1rem;
     }
-    
+
     .sixth-sect-form textarea::placeholder{
         font-size: 1rem;
     }
-    
+
     .sixth-sect-form button{
         font-size: 1rem;
     }
@@ -1637,7 +1645,7 @@ hr.solid {
         margin-top: -10rem;
         gap: 2rem;
     }
-    
+
     .sixth-sect-info-wrapper p, h5{
         font-size: 1rem;
     }
@@ -1654,14 +1662,14 @@ hr.solid {
     .social-links{
         gap: 0.5rem;
         flex-wrap: wrap;
-    }    
+    }
 
     .footer-links{
         flex-direction: column;
         text-align: left;
         gap: 0.5rem;
-    }    
-    
+    }
+
     .footer-links a,
     .social-links a{
         font-size: 0.7rem;
@@ -1677,3 +1685,200 @@ hr.solid {
     }
 }
 
+@media (max-width: 375px) {
+    .nav-left{
+        gap: 2rem;
+    }
+
+    .title-center h1{
+        font-size: 2.5em;
+    }
+
+    .nav-left-option-inner a{
+        font-size: 0.7rem;
+    }
+
+    .phrase-right h4{
+        font-size: 0.7rem;
+    }
+
+    /* section 2 */
+
+    .about-photo-and-text-wrapper{
+        gap: 5rem;
+    }
+
+    .sect-two-text-wrapper{
+        width: 60vw;
+        text-align: center;
+    }
+
+    .blurSquare{
+        width: 210px;
+        height: 220px;
+    }
+
+    .photo img{
+        width: 205px;
+        height:215px;
+        margin: 1rem 0 0 2rem;
+    }
+
+    .about-photo-and-text-wrapper p{
+        font-size: 0.7rem;
+    }
+
+    .sec-two-name h5{
+        font-size: 1rem;
+    }
+
+    .profession h5{
+        font-size: 0.8rem;
+    }
+    /* section 3 */
+
+    .sec-three-gallery{
+        height: 70vh;
+        gap: 10rem;
+    }
+    
+    .gallery-wrapper img{
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    /* me quede por aqui, no supe bien como centar la galleria de seccion 3, buscar bien, el uktimo commit fue del media query anterior3 */
+
+    .gallery-wrapper-one img:hover{
+        transform: scale(1.04) translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .gallery-wrapper-two img:hover{
+        transform: scale(1.04) translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    /* section 4 */
+    .fourth-sect-text{
+        font-size: 0.7rem;
+        margin: 19%;
+    }
+
+    /* section 5 */
+    .section-five{
+        height:100vh;
+    }
+
+    .fifth-sect-gallery-title h4{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .fifth-sect-galleryOptions-wrapper{
+        width: 80%;
+        margin: 1rem 3rem 3rem 3rem;
+        flex-wrap: wrap;
+        line-height: 1px;
+    }
+
+    .fifth-sect-galleryOptions-wrapper a{
+        font-size: 0.7rem;
+    }
+
+    .fifth-sect-gallery-wrapper .img{
+        width: 85px;
+        height: 85px;
+        border-radius: 8px;
+    }
+
+    .fifth-sect-gallery-wrapper > div .album-num{
+        display: none;
+    }
+
+    .fifth-sect-gallery-wrapper .img:hover img{
+        filter: brightness(100%);
+    }
+
+    /* section 6 */
+
+    .contact-sect{
+        gap: 2rem;
+    }
+
+    .sixth-sect-contact-items-wrapper{
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .sixth-sect-text-wrapper h4{
+        font-size: 2rem;
+    }
+
+    .sixth-sect-form input, .sixth-sect-form textarea{
+        font-size: 0.7rem;
+        padding: 0 60px 0 5px;
+    }
+
+    .sixth-sect-form input::placeholder{
+        font-size: 0.7rem;
+    }
+
+    .sixth-sect-form textarea::placeholder{
+        font-size: 0.7rem;
+    }
+
+    .sixth-sect-form button{
+        font-size: 0.7rem;
+    }
+
+    .sixth-sect-info-wrapper{
+        flex-direction: column;
+        margin-top: -8rem;
+        gap: 1rem;
+    }
+
+    .sixth-sect-info-wrapper p, h5{
+        font-size: 0.7rem;
+    }
+
+    /* footer */
+
+    .thanksMassage-wrapper p{
+        font-size: 0.5rem;
+    }
+
+    .social-links{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    .footer-links a,
+    .social-links a{
+        font-size: 0.5rem;
+    }
+
+    .social-links svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .scrollText-wrapper{
+        margin-top: -3rem;
+        font-size: 0.5rem;
+    }
+    
+
+    .allRtsRvd{
+        font-size: 0.5rem;
+    }
+
+}

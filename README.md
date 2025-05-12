@@ -49,3 +49,8 @@ Luz Nómada is a sample portfolio website showcasing a photographer’s work. De
 ├── script.js              # JavaScript & animations
 ├── Cover-4.jpg            # Screenshot preview used in README
 └── README.md              # Project overview and setup
+
+```
+
+
+_Designed & coded by Justin Mora for practice._ 💚👨🏻‍💻
